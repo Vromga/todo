@@ -1,0 +1,44 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+
+.item__label {
+
+}
+.item__label:hover {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.item__wrap {
+
+}
+
+.item__btn {
+  width: 40px;
+}
+
+
+.text{
+  font-size: 50px;
+}
+
+.active{
+  background-color: rgba(172, 172, 193, 0.2);
+  color: black
+}
+
+.important{
+  color: steelblue;
+  font-weight: bold;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+

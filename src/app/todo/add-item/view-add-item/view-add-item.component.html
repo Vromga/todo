@@ -1,0 +1,5 @@
+<form class="container" [formGroup]="formAddTodo" (ngSubmit)="onAddTodo()">
+  <input type="text" formControlName="label" class="form-control" placeholder="Add new ToDo" aria-label="Add new ToDo">
+  <button type="submit" [disabled]="formAddTodo.invalid" class="btn btn-outline-success ml-2"><i class="fa fa-plus" aria-hidden="true"></i>
+  </button>
+</form>

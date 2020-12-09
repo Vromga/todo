@@ -1,0 +1,17 @@
+<ul class="list-group">
+  <li *ngFor="let t of todo | searchTodo: st.search" class="list-group-item item" appItemHover>
+    <span class="item__label"
+          [class.important]="t.important"
+          [class.done]="t.done"
+          (click)="onToggleDone(t.id)">{{t.label}}</span>
+    <span class="item__wrap">
+      <button class="btn btn-outline-danger item__btn"
+              (click)="onDeleteTodo(t.id)">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+      </button>
+      <button class="btn btn-outline-success item__btn ml-2" (click)="onToggleImportant(t.id)">
+        <i class="fa fa-exclamation" aria-hidden="true"></i>
+      </button>
+    </span>
+  </li>
+</ul>
